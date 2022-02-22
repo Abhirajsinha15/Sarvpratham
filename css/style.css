@@ -14,8 +14,12 @@
 
 
 header{
-    padding: 32px 0;
-    background:#76F9F9;       
+    background:#76F9F9; 
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1040;
+    position: fixed;     
 }
 
 
@@ -89,18 +93,16 @@ nav ul li{
     display: block;
 }
 
-.hero{
-    padding: 70px 0;
-    background: #17202A;
-}
 
 .hero h1{
     font-style: italic;
 }
 
+
+
 .queries{
     padding: 70px 0;
-    background: #17202A;
+    background: #FF5733 
 }
 
 /* standard cards */
@@ -138,7 +140,7 @@ nav ul li{
     width: 320px;
     height: 50%;
     padding: 12px ;
-    background:#ff0066 ;
+    background:#fff ;
     transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
     box-sizing: border-box;
     overflow: hidden;
@@ -162,5 +164,15 @@ nav ul li{
 }
 
 .most_popular_courses .card{
-    border-radius:0px 0px 20px 20px
+    border-radius:0px 0px 20px 20px;
+
+}
+
+.bootstrap img{
+    width: 89%;
+}
+
+.consulting{
+    padding: 40px 0;
+    background: #FF5733 
 }

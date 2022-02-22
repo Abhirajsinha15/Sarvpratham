@@ -4,7 +4,6 @@
 1) Navigation bar
 2) Education qoutes section 1
 3) 2nd section meet our team 
-4) Basic queries of parents regarding their child 
 5)syllabus of IX and X  and XI and XII
 6) section of confuse about your carrier
 7)About IT carriers 
@@ -42,3 +41,9 @@ $('.slider').slick({
       }
     ]
   });
+
+//   <ul class="social-medias d-flex justify-content-center">
+//   <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+//   <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+//   <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+// </ul>
