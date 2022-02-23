@@ -6,12 +6,11 @@
 }
 
 .navbar-brand img{
-    width: 20%;
+    width: 115px;
     background: #F5B041;
     margin: 10px 0;
+
 }
-
-
 
 header{
     background:#76F9F9; 
@@ -56,6 +55,12 @@ nav ul li{
     background:#F5B041 ;
     color: #fff;
 }
+
+.menu a:active{
+    background:#F5B041;
+    color: #fff;
+}
+
 /* COURSE SUB-MENU STYLE */
 .CourseMenu{
     position: absolute;
@@ -94,10 +99,15 @@ nav ul li{
 }
 
 
-.hero h1{
-    font-style: italic;
+.hero img{
+    object-fit: cover;
+    width: 100%;
+    margin: 80px 0 0;
 }
 
+.staff .card-img img{
+    width:70%
+}
 
 
 .queries{
@@ -158,12 +168,16 @@ nav ul li{
     padding: 70px 0;
 }
 
+.slick-next:hover{
+    color: #f92504 !important;
+}
+
 .level h5{
     background: #C3C8CD;
     border-radius: 10px;
 }
 
-.most_popular_courses .card{
+.IT-web-section .card{
     border-radius:0px 0px 20px 20px;
 
 }
@@ -172,6 +186,17 @@ nav ul li{
     width: 89%;
 }
 
+.illu {
+    width: 77%;
+}
+
+.corel{
+    width: 85%;
+}
+
+.indesign{
+    width: 75%;
+}
 .consulting{
     padding: 40px 0;
     background: #FF5733 

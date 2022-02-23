@@ -11,7 +11,7 @@
 
 */
 
-
+//_____________________________________Slider_______________________________//
 $('.slider').slick({
     infinite: false,
     slidesToShow: 3,
@@ -41,9 +41,3 @@ $('.slider').slick({
       }
     ]
   });
-
-//   <ul class="social-medias d-flex justify-content-center">
-//   <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-//   <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-//   <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-// </ul>
