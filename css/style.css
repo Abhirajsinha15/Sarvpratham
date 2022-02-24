@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-brand img{
@@ -199,5 +199,62 @@ nav ul li{
 }
 .consulting{
     padding: 40px 0;
-    background: #FF5733 
+    background: #F6C293;
+    color: #f92504 
+}
+
+footer{
+    padding:40px 0;
+    background: #FF5733;
+    
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li a{
+ font-weight: 400;
+ text-decoration: none;
+ color: #fff;
+}
+
+@media screen and (min-width:768px) {
+
+
+
+    .menu >  li, .menu > a{
+        display: flex;
+    }
+
+    .staff .col-md-12:nth-of-type(3n-1){
+        margin: 60px 0;
+    }
+
+    .queries .col-md-12:nth-of-type(3n-1){
+        margin: 60px 0;
+    }
+
+    .std_card{
+        left:27%
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .menu >  li, .menu > a{
+        display: inline-block;
+    }
+
+    .staff .col-md-12:nth-of-type(3n-1){
+        margin:0;
+    }
+
+    .queries .col-md-12:nth-of-type(3n-1){
+        margin:0;
+    }
+
+    .std_card{
+        left: -6%;
+    }
 }
