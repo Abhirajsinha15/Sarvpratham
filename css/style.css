@@ -5,6 +5,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 .navbar-brand img{
     width: 115px;
     background: #F5B041;
@@ -168,8 +170,23 @@ nav ul li{
     padding: 70px 0;
 }
 
-.slick-next:hover{
-    color: #f92504 !important;
+.slick-prev{
+    background: #0275d8 !important;
+    padding: 0 20px !important;
+    left: -3% !important;
+    width: 50px !important;
+    height: 22px !important;
+
+
+}
+
+.slick-next{
+    background: #0275d8 !important;
+    padding: 0 20px !important;
+    right: -3% !important;
+    width: 50px !important;
+    height: 22px !important;
+
 }
 
 .level h5{
@@ -203,6 +220,11 @@ nav ul li{
     color: #f92504 
 }
 
+
+.form-section{
+    padding: 50px 0;
+}
+
 footer{
     padding:40px 0;
     background: #FF5733;
@@ -213,10 +235,36 @@ footer ul{
     list-style: none;
 }
 
-footer ul li a{
+.footer-points a{
  font-weight: 400;
  text-decoration: none;
  color: #fff;
+}
+
+
+#scroll-btn{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #f92504;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.mapArea{
+    padding: 40px 0;
+}
+
+iframe{
+    width: 1100px; 
+    height: 250px ;
 }
 
 @media screen and (min-width:768px) {
@@ -238,6 +286,69 @@ footer ul li a{
     .std_card{
         left:27%
     }
+
+    /* COURSE SUB-MENU STYLE */
+/* .CourseMenu{
+    position: fixed;
+    background: rebeccapurple ;
+    width: 250px;
+    left: 25%;
+    display: fixed;
+} */
+
+/* ACADEMIC SUB-MENU STYLE */
+/* .subMenu{
+    position: absolute;
+    left: 100%;
+    width: 270px;
+    top: 0;
+    background: rebeccapurple;
+    display: none;
+} */
+
+/* SHOW MENU ON HOVER STYLE */
+/* .menu li:hover > .CourseMenu{
+    display: block;
+} */
+
+/* .menu li:hover > .subMenu{
+    display: block;
+} */
+
+.ITmenu{
+    position: absolute;
+    background: #76F9F9;
+    display: none;
+}
+
+.menu li:hover > .ITmenu{
+    display: block;
+}
+
+.slick-prev{
+    background: #0275d8 !important;
+    padding: 0 20px !important;
+    left: -3% !important;
+    width: 50px !important;
+    height: 22px !important;
+
+
+}
+
+.slick-next{
+    background: #0275d8 !important;
+    padding: 0 20px !important;
+    right: -3% !important;
+    width: 50px !important;
+    height: 22px !important;
+
+}
+
+iframe{
+    width: 715px; 
+    height: 250px ;
+}
+
 }
 
 @media screen and (min-width:1200px) {
@@ -256,5 +367,10 @@ footer ul li a{
 
     .std_card{
         left: -6%;
+    }
+
+    iframe{
+        width: 1100px; 
+        height: 250px ;
     }
 }
