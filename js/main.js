@@ -76,7 +76,7 @@ function hero() {
   }]
   $.each(data, function (index, item) {
     $(cont).append(`
-        <div class="col-lg-12 my-5 mx-sm-5">
+        <div class="col-lg-12 my-5">
             <div class="content text-white">
               <img src="videos/${item.imgName}.gif" class="img-fluid img-rounded">
             </div>
