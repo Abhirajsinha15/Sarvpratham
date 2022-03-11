@@ -66,6 +66,26 @@ $('.slider').slick({
 
   });
 
+
+  //________________________________READ MORE-BUTTON _________________________________________________________
+
+  $(document).ready(function(){
+
+    function readMore(){
+      $(".Read-morebtn").on("click" , function(){
+        $(this).parent().toggleClass("showContent");
+
+        //Shorthand if-else statement
+        var replaceText = $(this).parent().hasClass("showContent") ? "Read Less" :"Read More";
+        $(this).text(replaceText);
+  
+     })
+    }
+
+    readMore()
+
+  });
+
 //________________________________HERO-SECTION DATA_________________________________________________________
 
 function hero() {
@@ -152,3 +172,6 @@ function queries(){
 hero();
 staff();
 queries();
+
+
+
