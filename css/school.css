@@ -244,9 +244,71 @@ header{
 
 .hero{
     padding: 70px 0;
-    background: #FF5733;
+    background: url(/images/green-board.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.our-goal{
+    padding: 70px 0;
+}
+
+.course{
+    padding: 70px 0;
+    background: #FA9233;
+}
+
+.std_card{
+    position: relative;
+    left: 20%;
+    width: 318px;
+    height: 320px;
+    transition: 0.3s ease-out;
+    box-shadow:  0 3px 15px rgba(0, 0, 0, 0.7);
+}
+
+.std_card.imgBox{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;   
+}
+
+.std_card.imgBox img{
+    position: absolute;
+    top: 0;
+    left: 8%;
+    width: 100%;    
+    height: 80%;
+    display: block;
+    transition: 0.5s;
+}
+
+.std_card .content{
+    position: absolute;
+    left: 0;
+    bottom: 0 ;
+    width: 320px;
+    height: 50%;
+    padding: 12px ;
+    background:#fff ;
+    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
 
 }
+
+.std_card:hover .content{
+    width: 100%;
+    height: 80%;
+    left: 0;
+    bottom: 0;
+}
+
+.course .col-lg-6:nth-of-type(4n-1) ,.course .col-lg-6:nth-of-type(4n){
+    margin: 50px 0;
+}
+
+
 
 footer{
     padding:40px 0;
