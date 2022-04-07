@@ -112,7 +112,7 @@ function staff(){
   let title = $(".staff-title")
 
   let data=[{
-    title:"#Our Team"
+    title:"#TeamSarvpratham"
   }]
 
   title.append(data[0].title);
