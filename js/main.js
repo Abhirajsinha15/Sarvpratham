@@ -41,6 +41,24 @@ $('.slider').slick({
     }
   ]
 });
+
+
+//________________________________ACTIVE-BUTTON _________________________________________________________
+
+
+// $(document).ready(function(){
+//   $('.nav-link').on('click', function () {
+//       alert(1)
+//     //Removing active class from all the 'li'
+//     $('.nav-link').removeClass('active');
+
+//       //Adding active class on clicked LI
+//       $(this).addClass('active');
+//   })
+// })
+
+
+
 //________________________________SCROLL-BUTTON _________________________________________________________
 
   $(document).ready(function(){
@@ -85,6 +103,8 @@ $('.slider').slick({
     readMore()
 
   });
+
+ 
 
 //________________________________HERO-SECTION DATA_________________________________________________________
 

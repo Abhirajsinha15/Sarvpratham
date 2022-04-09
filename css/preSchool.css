@@ -213,6 +213,10 @@ header{
     display: none;
 }
 
+/* .active {
+    background:#F5B041 ;
+    color: #fff;
+} */
 
 #check:checked ~ .mobile-menu-container .menu{
     background-color: transparent;
@@ -241,5 +245,94 @@ header{
     width: 100%;
     overflow: hidden;
 }
+
+.hero img{
+    object-fit: cover;
+    width: 100%;
+    margin: 80px 0 0;
+}
+
+
+.team{
+    padding: 70px 0;
+}
+.programmes{
+    padding: 70px 0;
+}
+
+.programmes .content h2{
+    color: #56509f;
+}
+
+.mission{
+    padding: 50px 0;
+}
+
+.gallery{
+    padding: 70px 0;
+}
+
+.activities{
+  padding: 70px 0;
+  background: #7DB0F9
+}
+
+
+.activities h2{
+    color: #0D3477;
+}
+.activities span{
+    color: #FF5733;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    padding:40px 0;
+    background: #FF5733;
+    
+}
+
+footer ul{
+    list-style: none;
+}
+
+.footer-points a{
+ font-weight: 400;
+ text-decoration: none;
+ color: #fff;
+}
+
+#scroll-btn{
+    position: fixed;
+    right: 9px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #f92504;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
 
 

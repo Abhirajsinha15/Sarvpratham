@@ -215,6 +215,11 @@ header{
     display: none;
 }
 
+.active {
+    background:#F5B041 ;
+    color: #fff;
+}
+
 
 #check:checked ~ .mobile-menu-container .menu{
     background-color: transparent;
@@ -238,6 +243,8 @@ header{
         transform: translateY(0);
     }
 }
+
+
 
 /* -----------------------------------NAVIGATION BAR END-----------------*/
 .hero{
