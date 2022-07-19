@@ -6,6 +6,10 @@
 }
 
 
+/* .hero , .activities, .team, .programmes, footer, header, .mapArea{
+    display: none;
+} */
+
 
 .navbar-brand img{
     width: 115px;
@@ -289,7 +293,14 @@ header{
     font-size: 20px;
 }
 
+.mapArea {
+    padding: 40px 0;
+}
 
+iframe {
+    width: 1100px;
+    height: 250px;
+}
 
 
 footer{
@@ -330,6 +341,11 @@ footer ul{
         margin: 60px 0;
     }
 
+    iframe {
+        width: 285px;
+        height: 250px;
+    }
+
     
 }
 
@@ -344,13 +360,18 @@ footer ul{
         display: block;
     }
 
+
+    header{
+        height: 8rem;
+    }
+
     .nav-btn{
         position: fixed;
         height: calc(100vh - 3rem);
-        top: 9rem;
+        top: 8rem;
         left: 0;
         width: 100%;
-        background: #69bde7;
+        background:  #76F9F9;;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
@@ -438,11 +459,24 @@ footer ul{
 
 }
 
+@media screen and (min-width:734px){
+    iframe {
+        width: 500px;
+        height: 250px;
+    }
+}
+
 @media screen and (min-width:768px)  {
     
     .programmes .col-md-12:nth-of-type(3n-1){
         margin: 60px 0;
     }
+
+    iframe {
+        width: 715px;
+        height: 250px;
+    }
+
 }
 
 
@@ -450,5 +484,10 @@ footer ul{
     
     .programmes .col-md-12:nth-of-type(3n-1){
         margin:  0;
+    }
+
+    iframe {
+        width: 1100px;
+        height: 250px;
     }
 }

@@ -144,6 +144,7 @@
     </header>
     <main>
 
+ <!------------------------------ABOUT-MODAL --------------------------------------------------------->
         <div class="modal" id="myModal">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -183,11 +184,13 @@
                 </div>
             </div>
         </div>
+
+ 
         <!------------------------------HERO START-POINT --------------------------------------------------------->
         <section class="hero">
             <div class="container">
-                <div class="row hero-theme">
-
+                <div class="row content-wrapper">
+                    
                 </div>
             </div>
         </section>
@@ -195,9 +198,9 @@
         <section class="staff">
             <div class="container">
                 <div class="team-content my-5 text-center">
-                    <h2 class="staff-title"></h2>
+                    <h2 id="team-title"></h2>
                 </div>
-                <div class="row my-5 text-center staff-wrapper">
+                <div class="row my-5 text-center" id="content-wrapper">
 
                 </div>
             </div>
@@ -206,7 +209,7 @@
         <section class="queries">
             <div class="container">
                 <div class="content text-center text-white  my-5 ">
-                    <h2 class="queries-title"></h2>
+                    <h2>Queries</h2>
                 </div>
                 <div class="row my-5 ">
                     <div class="col-md-12 col-lg-4 col-xl-4">
@@ -256,7 +259,7 @@
             </div>
         </section>
         <!------------------------------IT COURSES START-POINT -------------------------------------------------------->
-        <section class="most_popular_courses ">
+        <section class="most_popular_courses">
             <div class="container">
                 <div class="content  text-center my-5">
                     <h2>Our I.T Courses </h2>
@@ -265,7 +268,7 @@
                 <div class="content text-center">
                     <h2>Web Development</h2>
                 </div>
-                <div class="row slider IT-web-section ">
+                <div class="row slider IT-web-section">
                     <div class="col-md-12 col-lg-4 col-xl-4 py-3">
                         <div class="card border border-primary">
                             <div class="card-image">
@@ -487,7 +490,7 @@
                 </div>
             </div>
         </section>
-
+         <!------------------------------Map START-POINT --------------------------------------------------------->
         <section class="mapArea">
             <div class="container">
                 <div class="content text-center my-5">
@@ -497,7 +500,7 @@
                     <div class="col-lg-12">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.4427923667427!2d77.05367841440682!3d28.616488391559187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05282d295ea5%3A0xd062189abf3e3293!2sSarvpratham%20Education!5e0!3m2!1sen!2sin!4v1645874153879!5m2!1sen!2sin"
-                            style="border:0;" allowfullscreen="" loading="lazy">
+                            style="border:0; margin: 0 auto ;" allowfullscreen="" loading="lazy">
                         </iframe>
                     </div>
                 </div>
@@ -512,15 +515,43 @@
                     <ul
                         class="footer-points  d-lg-flex justify-lg-content-center justify-content-lg-center  d-lg-flex justify-lg-content-center justify-content-lg-center">
                         <li class="mx-4 my-3"><a href="index.html">Home</a></li>
-                        <li class="mx-4 my-3"><a href="">About</a></li>
+                        <li class="mx-4 my-3"><a href="" data-toggle="modal" data-target="#myModal">About</a></li>
                         <li class="mx-4 my-3"><a href="">Course</a></li>
-                        <li class="mx-4 my-3"><a href="">Contact Us</a></li>
+                        <li class="mx-4 my-3"><a href="" data-toggle="modal" data-target="#ContactUs">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </div>  
     </footer>
+    <!------------------------------CONTACT-MODAL --------------------------------------------------------->
+    <div class="modal" id="ContactUs">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Contact Us</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <ul>
+                        <li class="my-3"><i class="fa fa-phone" aria-hidden="true"></i> +91 9540000270</li>
+                        <li class="my-3"><i class="fa fa-phone" aria-hidden="true"></i> +91 7217680457</li>
+                        <li class="my-3"><a href="mailto:sarvprathamdelhi@gmail.com" target="_blank">sarvprathamdelhi@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-----------------------------Scroll-btn --------------------------------------------------------->
     <button id="scroll-btn">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </button>
@@ -540,6 +571,10 @@
     through expert and experienced facalities
     with excellent past results .
     
+    +91 9540000270; - contact n
+     +   7217680457
+
+     sarvprathamdelhi@gmail.com- email-id
     
     -->
 

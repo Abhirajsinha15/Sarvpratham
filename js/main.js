@@ -61,137 +61,166 @@ $('.slider').slick({
 
 //________________________________SCROLL-BUTTON _________________________________________________________
 
-  $(document).ready(function(){
-
-    function scrollUp(){
-
-      // $(window).scroll(function(event){
-      //   if($(window).scrollTop() > 40){
-      //       $("#scroll-btn").addClass("active")
-      //   }
-      //   else{
-      //     $("#scroll-btn").hide()
-      //   }
-      // });
 
 
-     $("#scroll-btn").on('click', function(){
-        $(window).scrollTop(0)
-     })
-    }
+//Get the button:
+mybutton = document.getElementById("scroll-btn");
 
-    scrollUp()
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
 
-  });
-
-
-  //________________________________READ MORE-BUTTON _________________________________________________________
-
-  $(document).ready(function(){
-
-    function readMore(){
-      $(".Read-morebtn").on("click" , function(){
-        $(this).parent().toggleClass("showContent");
-
-        //Shorthand if-else statement
-        var replaceText = $(this).parent().hasClass("showContent") ? "Read Less" :"Read More";
-        $(this).text(replaceText);
-  
-     })
-    }
-
-    readMore()
-
-  });
-
- 
-
-//________________________________HERO-SECTION DATA_________________________________________________________
-
-function hero() {
-  let cont = $(".hero-theme");
-
-  let data = [{
-    imgName: "hero-gif",
-  }]
-  $.each(data, function (index, item) {
-    $(cont).append(`
-        <div class="col-lg-12 my-5">
-            <div class="content text-white">
-              <img src="videos/${item.imgName}.gif" class="img-fluid img-rounded">
-            </div>
-        </div>
-      `)
-  })
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
 
-//________________________________STAFF-SECTION DATA_________________________________________________________
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+$("#scroll-btn").on('click', function () {
+  $(window).scrollTop(0)
+})
 
 
-function staff(){
-  let title = $(".staff-title")
+//________________________________READ MORE-BUTTON _________________________________________________________
 
-  let data=[{
-    title:"#TeamSarvpratham"
+$(document).ready(function () {
+
+  function readMore() {
+    $(".Read-morebtn").on("click", function () {
+      $(this).parent().toggleClass("showContent");
+
+      //Shorthand if-else statement
+      var replaceText = $(this).parent().hasClass("showContent") ? "Read Less" : "Read More";
+      $(this).text(replaceText);
+
+    })
+  }
+
+  readMore()
+
+});
+
+
+//______________________________________Data-Bases________________________________________________________
+
+//______________________________________HeroData-Base________________________________________________________
+
+function hero() {
+
+
+  let itemContent = [{
+    imgName: 'hero-gif'
+
+  },
+  ]
+  let itemWrapper = $(".content-wrapper");
+  $.each(itemContent, function (index, item) {
+    itemWrapper.append(`
+      <div class="col-lg-12 my-5">
+        <div class="content text-white">
+          <img src="videos/${item.imgName}.gif" class="img-fluid img-rounded">
+        </div>
+       </div>
+    `)
+  })
+
+}
+
+//______________________________________ StaffData-Base________________________________________________________
+
+function staff() {
+
+  let title = $('#team-title');
+  let data = [{
+    title: "#TeamSarvpratham"
   }]
 
-  title.append(data[0].title);
+  title.append(data[0].title)
 
   let itemContent = [
     {
-      title:"Shobhit Sharma",
-      imgName:"profile_shobhit",
-
+      title: 'Shobhit Sharma',
+      imgName: 'profile_shobhit',
     },
     {
-      title:"Mayank Sharma",
-      imgName:"profile",
-
+      title: 'Mayank Sharma',
+      imgName: 'profile_manish',
     },
     {
-      title:"Shobhit Sharma",
-      imgName:"profile_shobhit",
+      title: 'Rakesh Sir',
+      imgName: 'profile_rakesh',
+    },
 
-    }
   ]
 
-  let itemWrapper = $(".staff-wrapper") 
-  $.each(itemContent , function( index, item){
-      itemWrapper.append(`
-      <div class="col-md-12 col-lg-4 col-xl-4">
-        <div class="card border-0">
-          <div class="card-img">
-              <img src="images/${item.imgName}.jfif" class=" mx-5">
+  let itemWrapper = $("#content-wrapper");
+  $.each(itemContent, function (index, item) {
+    itemWrapper.append(`
+        <div class="col-md-12 col-lg-4 col-xl-4">
+            <div class="card border-0">
+              <div class="card-img">
+                  <img src="images/${item.imgName}.jpg" class=" mx-3 ">
+              </div>
+            </div>
+            <div class="content text-center my-3">
+              <h2>${item.title}</h2>
+            </div>
           </div>
-        </div>
-        <div class="content text-center my-3">
-          <h2>${item.title}</h2>
-        </div>
-      </div>
-      
       `)
   })
 }
 
+//______________________________________QueriesData-Base________________________________________________________
 
-//________________________________QUERIES-SECTION DATA_________________________________________________________
+// function queries(){
+//     let title = $('#queries-title');
 
-function queries(){
+//     let data =[{
+//       title:"Queries"
+//     }]
 
-  let title =$(".queries-title");
+//     title.append(data[0].title)
 
-  let data=[{
-    title:"Queries"
-  }]
+//     let itemContent =[
+//       {
+//         imgName :'',
+//         title: '',
+          
+//       },
+//       {
+//         imgName :'',
+//         title: '',
+          
+//       },
+//       {
+//         imgName :'',
+//         title: '',
+          
+//       }
+//     ]
 
-  title.append(data[0].title);
-}
+//     let itemWrapper = $("content-wrapper");
+//     $.each(itemContent , function ( index,item){
+//       itemWrapper.append(`
+      
+      
+//       `)
+//     })
 
-//----------------------------Calling function----------------------------------------------------
+// }
+
+//______________________________________Calling back Functions________________________________________________________
 
 hero();
 staff();
-queries();
+
 
 
 

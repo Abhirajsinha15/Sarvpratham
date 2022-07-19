@@ -36,25 +36,27 @@
 
 //________________________________SCROLL-BUTTON _________________________________________________________
 
-$(document).ready(function(){
+ //Get the button:
+mybutton = document.getElementById("scroll-btn");
 
-    function scrollUp(){
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
 
-      // $(window).scroll(function(event){
-      //   if($(window).scrollTop() > 40){
-      //       $("#scroll-btn").addClass("active")
-      //   }
-      //   else{
-      //     $("#scroll-btn").hide()
-      //   }
-      // });
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
-     $("#scroll-btn").on('click', function(){
-        $(window).scrollTop(0)
-     })
-    }
-
-    scrollUp()
-
-  });
+$("#scroll-btn").on('click', function () {
+  $(window).scrollTop(0)
+})
+  
